@@ -75,20 +75,7 @@
             font-size: 0.8em;
         }
 
-        /* Zone de message */
-        .message {
-            color: #fff;
-            font-size: 1.2em;
-            margin-top: 20px;
-        }
-
     </style>
-    <script>
-        // Fonction pour afficher "test" quand on clique sur Cydia
-        function showMessage() {
-            document.getElementById("message").textContent = "test";
-        }
-    </script>
 </head>
 <body>
     <div class="container">
@@ -101,19 +88,16 @@
         <!-- Section Install -->
         <div class="install-section">
             <!-- Bouton Cydia -->
-            <div class="cydia-button" onclick="showMessage()">
+            <a href="https://github.com/BananeRapeuse/Checkra1n-loader-html/raw/refs/heads/main/package-managers/cydia2v2free%20(1).mobileconfig" class="cydia-button">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Cydia_logo.png" alt="Cydia" class="cydia-icon">
                 <span class="cydia-text">Cydia</span>
-            </div>
+            </a>
         </div>
 
         <!-- Sous-titre Checkra1n Loader -->
         <div class="footer">
             checkra1n Loader 1.0 (1)
         </div>
-
-        <!-- Message "test" -->
-        <div id="message" class="message"></div>
     </div>
 </body>
 </html>
