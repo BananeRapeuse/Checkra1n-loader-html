@@ -52,6 +52,7 @@
             border-radius: 10px;
             text-decoration: none;
             color: #fff;
+            cursor: pointer;
         }
 
         /* Image icône Cydia */
@@ -74,12 +75,25 @@
             font-size: 0.8em;
         }
 
+        /* Zone de message */
+        .message {
+            color: #fff;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
     </style>
+    <script>
+        // Fonction pour afficher "test" quand on clique sur Cydia
+        function showMessage() {
+            document.getElementById("message").textContent = "test";
+        }
+    </script>
 </head>
 <body>
     <div class="container">
         <!-- Logo du haut -->
-        <img src="https://checkra.in/assets/img/logo.png" alt="logo" class="logo">
+        <img src="https://avatars.githubusercontent.com/u/56771417?s=280&v=4" alt="logo" class="logo">
 
         <!-- Titre principal -->
         <h1>Loader</h1>
@@ -87,16 +101,19 @@
         <!-- Section Install -->
         <div class="install-section">
             <!-- Bouton Cydia -->
-            <a href="#" class="cydia-button">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Cydia-logo.png" alt="Cydia" class="cydia-icon">
+            <div class="cydia-button" onclick="showMessage()">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Cydia_logo.png" alt="Cydia" class="cydia-icon">
                 <span class="cydia-text">Cydia</span>
-            </a>
+            </div>
         </div>
 
         <!-- Sous-titre Checkra1n Loader -->
         <div class="footer">
             checkra1n Loader 1.0 (1)
         </div>
+
+        <!-- Message "test" -->
+        <div id="message" class="message"></div>
     </div>
 </body>
 </html>
